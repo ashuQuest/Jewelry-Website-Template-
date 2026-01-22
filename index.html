@@ -5,1696 +5,628 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DARK FASHION</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost&display=swap">
+    <link rel="stylesheet" href="darkfashionstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            border: none;
-            scroll-behavior: smooth;
-        }
 
-        html {
-            overflow-x: hidden;
-        }
 
-        body {
-            height: auto;
-            width: 100%;
-            background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/09/Background.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: black;
-            font-family: 'Jost', sans-serif;
-        }
 
-        /* Header Styles */
-        header {
-            height: auto;
-            width: 100%;
-            z-index: 99999999;
-            position: sticky;
-            top: 0%;
-            background-color: rgba(0, 0, 0, 0.575);
-            padding: 15px 0;
-        }
 
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .logo {
-            order: 2;
-        }
-
-        .logo img {
-            width: 180px;
-            height: 41px;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            order: 1;
-        }
-
-        .nav-menu li {
-            margin: 0 15px;
-            font-size: 14px;
-            color: #f0f0f0;
-            font-weight: 200;
-            letter-spacing: 1px;
-            cursor: pointer;
-        }
-
-        .nav-menu li:hover {
-            color: #bb9d7b;
-            transition: 0.3s ease-in-out;
-        }
-
-        .nav-icons {
-            display: flex;
-            list-style: none;
-            order: 3;
-        }
-
-        .nav-icons li {
-            margin-left: 20px;
-            color: #f0f0f0;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .nav-icons li:hover {
-            color: #bb9d7b;
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* Hero Section */
-        .section-1 {
-            padding: 50px 20px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .hero-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 30px;
-        }
-
-        .hero-text {
-            flex: 1 1 500px;
-            max-width: 641px;
-            padding: 20px;
-            color: #f0f0f0;
-        }
-
-        .hero-text h1 {
-            font-size: clamp(32px, 5vw, 61px);
-            margin-bottom: 25px;
-            line-height: 1.2;
-        }
-
-        .hero-text p {
-            font-size: 16px;
-            line-height: 30px;
-            margin-bottom: 30px;
-        }
-
-        .hero-image {
-            flex: 1 1 500px;
-            max-width: 695px;
-            background-image: linear-gradient(rgba(0, 0, 0, 0)75%, #3c3c3c), url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/Rectangle-117-1.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            min-height: 400px;
-        }
-
-        .hero-image-content {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            padding: 20px;
-            width: 100%;
-        }
-
-        .hero-image h1 {
-            color: #f0f0f0;
-            font-size: clamp(20px, 3vw, 32px);
-            margin-bottom: 20px;
-        }
-
-        .hero-image span {
-            color: #BB9D7B;
-        }
-
-        .hero-slider {
-            display: flex;
-            background-color: #1c1917;
-            padding: 30px;
-            margin-top: 30px;
-            position: relative;
-        }
-
-        .slider-image {
-            flex: 0 0 40%;
-            max-width: 368px;
-            min-height: 368px;
-            margin-top: -105px;
-        }
-
-        .slider-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .slider-content {
-            flex: 1;
-            padding: 20px;
-            color: #f0f0f0;
-        }
-
-        .slider-content h1 {
-            color: #BB9D7B;
-            font-size: 14px;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-        }
-
-        .slider-content h2 {
-            font-size: clamp(20px, 3vw, 29px);
-            letter-spacing: 7px;
-            margin-bottom: 20px;
-        }
-
-        .slider-content h2:hover {
-            color: #bb9d7b;
-            transition: 0.4s ease-in-out;
-        }
-
-        .slider-nav {
-            position: absolute;
-            right: 30px;
-            bottom: 30px;
-        }
-
-        .slider-nav button {
-            background: transparent;
-            color: #f0f0f0;
-            font-size: 15px;
-            letter-spacing: 3.5px;
-            padding: 10px 15px;
-            margin-left: 10px;
-        }
-
-        .slider-nav button:hover {
-            color: #bb9d7b;
-            transition: 0.3s ease-in-out;
-        }
-
-        /* Button Styles */
-        .btn-1 {
-            background-color: #bb9d7b;
-            color: white;
-            font-size: 12px;
-            font-weight: 600;
-            border: 2px solid #bb9d7b;
-            padding: 15px 30px;
-            cursor: pointer;
-            transition: 0.4s ease-in-out;
-            display: inline-block;
-        }
-
-        .btn-1:hover {
-            background: transparent;
-            color: #bb9d7b;
-        }
-
-        /* Collections Section */
-        .section-2 {
-            padding: 50px 20px;
-        }
-
-        .collections-header {
-            background-color: #000000;
-            padding: 50px;
-            margin-bottom: 30px;
-            color: #f0f0f0;
-        }
-
-        .collections-header h1 {
-            font-size: 14px;
-            letter-spacing: 3.5px;
-            margin-bottom: 30px;
-        }
-
-        .collections-header h2 {
-            font-size: clamp(28px, 5vw, 46px);
-            line-height: 1.2;
-            letter-spacing: 2px;
-        }
-
-        .collections-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .collection-item {
-            color: #f0f0f0;
-            text-align: center;
-        }
-
-        .collection-image {
-            height: 417px;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        .collection-image:hover::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #00000067;
-        }
-
-        .collection-item h1 {
-            font-size: 18px;
-            letter-spacing: 6px;
-            font-weight: 500;
-        }
-
-        .collection-item:hover h1 {
-            color: #bb9d7b;
-            transition: 0.3s ease-in-out;
-        }
-
-        /* Offer Sections */
-        .section-3 {
-            padding: 50px 20px;
-        }
-
-        .offer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .offer-item {
-            background-color: #000000;
-            color: #f0f0f0;
-            padding: 50px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .offer-image {
-            height: 771px;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .discount-badge {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            width: 150px;
-            height: 150px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cpath d='M972.6 502.3 939 465a40 40 0 0 1-6-44.9l22.8-44.6a40 40 0 0 0-18.4-54.2l-45.2-21.7a40 40 0 0 1-22.7-39.2l4-50a40 40 0 0 0-37.8-43l-50-2.6a40 40 0 0 1-36-27.6l-15.5-47.6A40 40 0 0 0 683 64.3l-47.3 16.6A40 40 0 0 1 592 69.2l-32.6-38a40 40 0 0 0-57.1-3.8L465 61a40 40 0 0 1-44.9 6L375.5 44a40 40 0 0 0-54.2 18.4l-21.7 45.2a40 40 0 0 1-39.2 22.7l-50-4a40 40 0 0 0-43 37.8l-2.6 50a40 40 0 0 1-27.6 36l-47.6 15.5A40 40 0 0 0 64.3 317l16.6 47.3A40 40 0 0 1 69.2 408l-38 32.6a40 40 0 0 0-3.8 57.1L60.9 535a40 40 0 0 1 6 44.9L44 624.5a40 40 0 0 0 18.4 54.2l45.2 21.7a40 40 0 0 1 22.7 39.2l-4 50a40 40 0 0 0 37.8 43l50 2.6a40 40 0 0 1 36 27.6l15.5 47.6a40 40 0 0 0 51.3 25.3l47.3-16.6a40 40 0 0 1 43.7 11.7l32.6 38a40 40 0 0 0 57.1 3.8l37.3-33.5a40 40 0 0 1 44.9-6l44.6 22.8a40 40 0 0 0 54.2-18.4l21.7-45.2a40 40 0 0 1 39.2-22.6l50 3.8a40 40 0 0 0 43-37.7l2.6-50a40 40 0 0 1 27.6-36l47.6-15.5a40 40 0 0 0 25.3-51.3l-16.6-47.3a40 40 0 0 1 11.7-43.7l38-32.6a40 40 0 0 0 3.8-57.1Z' fill='%23C6A47E'/%3E%3C/svg%3E");
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .discount-circle {
-            width: 111px;
-            height: 111px;
-            border: 3px solid white;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .discount-percent {
-            font-size: 40px;
-            font-weight: bold;
-            color: #f0f0f0;
-        }
-
-        .discount-text {
-            font-size: 14px;
-            color: #BB9D7B;
-            letter-spacing: 2px;
-        }
-
-        .offer-content {
-            padding: 50px 0;
-        }
-
-        .offer-content h1 {
-            color: #BB9D7B;
-            font-size: 14px;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-        }
-
-        .offer-content h2 {
-            font-size: clamp(28px, 4vw, 42px);
-            margin-bottom: 30px;
-        }
-
-        /* Products Section */
-        .section-4 {
-            background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-masonary-banner-bg.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 100px 20px;
-            position: relative;
-        }
-
-        .section-4::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #252525d2;
-            z-index: 0;
-        }
-
-        .products-container {
-            position: relative;
-            z-index: 1;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .products-header {
-            text-align: center;
-            color: #f0f0f0;
-            margin-bottom: 80px;
-        }
-
-        .products-header h1 {
-            font-size: 14px;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .products-header p {
-            font-size: clamp(28px, 5vw, 46px);
-            letter-spacing: 2px;
-        }
-
-        .products-divider {
-            border: 1px solid #bb9d7b;
-            position: relative;
-            margin-bottom: 80px;
-        }
-
-        .products-divider::before,
-        .products-divider::after {
-            content: '';
-            position: absolute;
-            width: 11px;
-            height: 11px;
-            background-color: #bb9d7b;
-            border-radius: 50%;
-            top: -5px;
-        }
-
-        .products-divider::before {
-            left: 0;
-        }
-
-        .products-divider::after {
-            right: 0;
-        }
-
-        .category-tabs {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-bottom: 80px;
-        }
-
-        .category-tab {
-            color: #515151;
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            cursor: pointer;
-        }
-
-        .category-tab:hover {
-            color: #f0f0f0;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .product-card {
-            color: #f0f0f0;
-        }
-
-        .product-image {
-            height: 415px;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 20px;
-        }
-
-        .product-title {
-            font-size: clamp(18px, 3vw, 26px);
-            margin-bottom: 10px;
-        }
-
-        .product-price {
-            color: #8f8e8e;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .product-rating i {
-            color: #bb9d7b;
-        }
-
-        /* FAQ Section */
-        .section-5 {
-            padding: 100px 20px;
-        }
-
-        .stats-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 100px;
-        }
-
-        .stats-item {
-            background-image: linear-gradient(rgba(0, 0, 0, 0)0%, #0e0e0ee4), url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Faq-aside-img.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 50px;
-            color: #f0f0f0;
-            min-height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            margin-top: 50px;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 20px;
-            border-right: 1px solid white;
-        }
-
-        .stat-item:last-child {
-            border-right: none;
-        }
-
-        .stat-number {
-            font-size: 34.5px;
-            margin-bottom: 5px;
-        }
-
-        .stat-number span {
-            color: #BB9D7B;
-        }
-
-        .stat-label {
-            font-size: 16px;
-            letter-spacing: 3px;
-        }
-
-        .faq-container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .faq-header {
-            text-align: center;
-            color: #f0f0f0;
-            margin-bottom: 50px;
-        }
-
-        .faq-header h1 {
-            font-size: 16px;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-            color: #BB9D7B;
-        }
-
-        .faq-header h2 {
-            font-size: clamp(28px, 5vw, 47px);
-            font-weight: 600;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid #333;
-            margin-bottom: 20px;
-        }
-
-        .faq-question {
-            width: 100%;
-            background-color: transparent;
-            color: #f0f0f0;
-            padding: 20px;
-            font-size: 18px;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            border: 1px solid #515151;
-        }
-
-        .faq-question:hover {
-            background-color: #bb9d7b;
-        }
-
-        .faq-item.active .faq-question {
-            background-color: #bb9d7b;
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.4s ease;
-            background-color: #BB9D7B;
-            color: #f0f0f0;
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 300px;
-            padding: 20px;
-        }
-
-        .faq-arrow {
-            transition: transform 0.3s ease;
-        }
-
-        .faq-item.active .faq-arrow {
-            transform: rotate(180deg);
-        }
-
-        .faq-contact {
-            padding: 30px;
-            background-color: #111;
-            border: 1px solid #333;
-            text-align: center;
-            color: #f0f0f0;
-            margin-top: 50px;
-        }
-
-        .faq-contact h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .faq-contact p {
-            margin-bottom: 20px;
-        }
-
-        /* Video Section */
-        .section-6 {
-            padding: 0;
-        }
-
-        .video-container {
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            position: relative;
-        }
-
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Promo Grid Section */
-        .section-7 {
-            background-image: linear-gradient(rgba(172, 7, 7, 0) 0%, #3c3c3c), url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-masonary-banner-bg.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding: 100px 20px;
-        }
-
-        .promo-header {
-            text-align: center;
-            color: #f0f0f0;
-            margin-bottom: 50px;
-        }
-
-        .promo-header h1 {
-            font-size: 14px;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-        }
-
-        .promo-header h2 {
-            font-size: clamp(28px, 5vw, 45.5px);
-            letter-spacing: 3px;
-        }
-
-        .promo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .promo-item {
-            position: relative;
-            height: 360px;
-            overflow: hidden;
-        }
-
-        .promo-item.small {
-            height: 360px;
-        }
-
-        .promo-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            transition: transform 0.5s ease;
-        }
-
-        .promo-item:hover .promo-bg {
-            transform: scale(1.1);
-        }
-
-        .promo-content {
-            position: absolute;
-            z-index: 2;
-            color: #f0f0f0;
-            padding: 30px;
-        }
-
-        .promo-discount {
-            font-size: 14px;
-            color: #bb9d7b;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-        }
-
-        .promo-title {
-            font-size: clamp(24px, 4vw, 40px);
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
-        /* Blog Section */
-        .section-8 {
-            padding: 100px 20px;
-        }
-
-        .blog-header {
-            text-align: center;
-            color: #f0f0f0;
-            margin-bottom: 50px;
-        }
-
-        .blog-header h1 {
-            font-size: 14px;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
-        }
-
-        .blog-header h2 {
-            font-size: clamp(28px, 5vw, 45.5px);
-            letter-spacing: 3px;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .blog-card {
-            position: relative;
-            color: #000000;
-        }
-
-        .blog-image {
-            height: 463px;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .blog-content {
-            background-color: #f0f0f0;
-            padding: 35px 40px;
-            width: 80%;
-            margin-top: -100px;
-            float: right;
-            position: relative;
-            z-index: 2;
-        }
-
-        .blog-card:hover .blog-content {
-            background-color: #23201E;
-            width: 100%;
-            color: #BB9D7B;
-        }
-
-        .blog-card:hover .blog-content h2 {
-            color: #f0f0f0;
-        }
-
-        .blog-date {
-            font-size: 16px;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .blog-title {
-            font-size: clamp(20px, 3vw, 30px);
-            margin-bottom: 20px;
-        }
-
-        .btn-3 {
-            padding: 12px 30px;
-            border: 1px solid black;
-            font-weight: 500;
-            font-size: 14px;
-            background: transparent;
-            cursor: pointer;
-        }
-
-        .blog-card:hover .btn-3 {
-            background: transparent;
-            border: 1px solid #bb9d7b;
-            color: #bb9d7b;
-        }
-
-        /* Footer */
-        footer {
-            background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-masonary-banner-bg.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            padding: 100px 20px 0;
-        }
-
-        footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #333333cf;
-            z-index: 0;
-        }
-
-        .footer-container {
-            position: relative;
-            z-index: 1;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .scrolling-text {
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            white-space: nowrap;
-            padding: 30px 0;
-            border-bottom: 1.5px solid #515151;
-            position: relative;
-        }
-
-        .scrolling-content {
-            display: flex;
-            animation: scrollLeft 20s linear infinite;
-        }
-
-        .scrolling-item {
-            display: flex;
-            align-items: center;
-            margin-right: 30px;
-        }
-
-        .scrolling-item h1 {
-            font-size: clamp(24px, 4vw, 40px);
-            color: white;
-            margin: 0 15px;
-            line-height: 1;
-        }
-
-        .scrolling-item img {
-            height: 30px;
-            width: 30px;
-        }
-
-        @keyframes scrollLeft {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 50px;
-            margin-top: 50px;
-        }
-
-        .footer-logo {
-            margin-bottom: 20px;
-        }
-
-        .footer-about p {
-            color: #f0f0f0;
-            line-height: 25px;
-            margin-top: 10px;
-        }
-
-        .footer-newsletter h3 {
-            color: #f0f0f0;
-            font-size: 25px;
-            margin-bottom: 20px;
-        }
-
-        .newsletter-form {
-            display: flex;
-            margin-top: 20px;
-        }
-
-        .newsletter-form input {
-            height: 69px;
-            flex: 1;
-            padding-left: 40px;
-            font-size: 18px;
-            background-color: #3c3c3c8e;
-            color: #f0f0f0;
-            border: none;
-        }
-
-        .newsletter-form button {
-            height: 68px;
-            width: 100px;
-            border-left: 1px solid white;
-            background-color: #3c3c3c8e;
-            color: #f0f0f0;
-            cursor: pointer;
-        }
-
-        .footer-contact h3,
-        .footer-gallery h3 {
-            color: #f0f0f0;
-            font-size: 30px;
-            margin-bottom: 30px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            color: #f0f0f0;
-        }
-
-        .contact-item i {
-            margin-right: 15px;
-            font-size: 20px;
-        }
-
-        .contact-item p:hover {
-            color: #bb9d7b;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-icons i {
-            font-size: 24px;
-            color: #f0f0f0;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .social-icons i:hover {
-            color: #bb9d7b;
-            transform: translateY(-5px);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-
-        .gallery-item {
-            height: 75px;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #515151;
-            padding: 30px 0;
-            margin-top: 50px;
-            text-align: center;
-            color: #f0f0f0;
-            font-size: 14px;
-        }
-
-        .footer-bottom span {
-            color: greenyellow;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 1200px) {
-            .hero-slider {
-                flex-direction: column;
-            }
-            
-            .slider-image {
-                margin-top: 0;
-                max-width: 100%;
-            }
-            
-            .slider-content {
-                padding: 20px 0;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .nav-menu {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .hero-content {
-                flex-direction: column;
-            }
-            
-            .hero-text,
-            .hero-image {
-                max-width: 100%;
-            }
-            
-            .offer-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .category-tabs {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-            
-            .newsletter-form {
-                flex-direction: column;
-            }
-            
-            .newsletter-form input,
-            .newsletter-form button {
-                width: 100%;
-            }
-            
-            .newsletter-form button {
-                border-left: none;
-                border-top: 1px solid white;
-            }
-            
-            .blog-content {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .btn-1 {
-                padding: 12px 20px;
-            }
-            
-            .slider-nav {
-                position: static;
-                margin-top: 20px;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <div class="header-container">
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-menu">
-                <li style="color: #BB9D7B;">HOME</li>
-                <li>ABOUT US</li>
-                <li>GIFT</li>
-                <li>GALLERY</li>
-            </ul>
-            
-            <div class="logo">
-                <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/Light-logo.svg" alt="Dark Fashion Logo">
-            </div>
-            
-            <ul class="nav-icons">
-                <li><i class='bx bx-search-alt'></i></li>
-                <li><i class="fa-solid fa-bag-shopping"></i></li>
-            </ul>
-        </div>
+        <ul type="none">
+            <li style="margin-left: 0px;color: #BB9D7B;">HOME</li>
+            <li>ABOUT US</li>
+            <li>GIFT</li>
+            <li>GALLERY</li>
+            <li style="margin-top: 0px;">
+                <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/Light-logo.svg" alt=""
+                    style="width: 180px;height: 41px;">
+            </li>
+            <li>SHOP</li>
+            <li>NEWS</li>
+            <li>CONTACT</li>
+            <li style="margin-left: 251px;">
+                <i class='bx bx-search-alt'></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </li>
+
+        </ul>
     </header>
 
     <section class="section-1">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Perfect Finishing Gold Jewelry</h1>
-                <p>Parturient montes nascetur ridiculus mus mauris vitae ultricies. Nulla facilisi morbi tempus iaculis. Ultrices vitae auctor eu augue. Eleifend quam adipiscing vitae proin sagittis nisl diam phasellus vestibulum lorem sed risus.</p>
-                <button class="btn-1">SHOP NOW</button>
-            </div>
-            
-            <div class="hero-image">
-                <div class="hero-image-content">
-                    <h1>Add Promo Code <span>10402F6</span> To Get Flat<span>30%</span>Discount</h1>
-                </div>
+        <div class="s-1-d-1">
+            <h1>Perfect Finishing Gold Jewelry</h1>
+            <p
+                style="font-size:16px; color: #f0f0f0; text-align:start;width: 85%;margin-top: 25px;line-height: 30px;margin-left: 10px;">
+                Parturient montes nascetur ridiculus mus mauris vitae ultricies. Nulla facilisi morbi tempus iaculis.
+                Ultrices vitae auctor eu augue. Eleifend quam adipiscing vitae proin sagittis nisl diam phasellus
+                vestibulum lorem sed risus. </p>
+            <button class="btn-1"
+                style="height: 50px;width: 164px;letter-spacing: 3px;margin-top: 30px;margin-left: 10px;">SHOP
+                NOW</button>
+        </div>
+        <div class="s-1-d-2">
+            <div>
+                <h1 style="color: #f0f0f0;width: 400px;font-size: 32px;font-family: 'Jost', sans-serif;">Add Promo Code
+                    <span style="color: #BB9D7B;">10402F6</span> To Get Flat<span
+                        style="color: #BB9D7B;">30%</span>Discount
+                </h1>
             </div>
         </div>
-        
-        <div class="hero-slider">
-            <div class="slider-image">
-                <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/Df-home-3-slider-img-box-img.webp" alt="Jewelry">
+        <!-- <div class="s-1-d-3">
+
+        </div> -->
+
+        <div class="s-1-d-4">
+            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/Df-home-3-slider-img-box-img.webp"
+                alt="" style="float: left;height: 368px;margin-top: -105px;">
+            <div style="width: 405px; height: 100%;margin-top: 0px;float: right;">
+                <h1
+                    style="color: #BB9D7B;font-size: 14px; font-weight: 800;font-family: 'Jost', sans-serif;letter-spacing: 3px;margin-top: 60px;">
+                    ELEGANT</h1>
+                <h2>MINIMAL DESIGN JEWELRY </h2>
+                <button style="height: 50px; width: 166px;margin-top: 20px;margin-left: 0%;">ORDER NOW</button>
             </div>
-            
-            <div class="slider-content">
-                <h1>ELEGANT</h1>
-                <h2>MINIMAL DESIGN JEWELRY</h2>
-                <button class="btn-1">ORDER NOW</button>
-            </div>
-            
-            <div class="slider-nav">
-                <button><i class='bx bx-arrow-back'></i>PREV</button>
-                <button>NEXT<i class='bx bx-arrow-back' style="rotate: 180deg;"></i></button>
-            </div>
+            <button><i class='bx bx-arrow-back'></i>PREV</button>
+            <button>NEXT<i class='bx bx-arrow-back' style="rotate: 180deg;"></i></button>
         </div>
+
     </section>
 
     <section class="section-2">
-        <div class="collections-header">
-            <h1>JEWELS YOU LOVE FOREVER</h1>
-            <h2>Hand Made Beautifully Designed Gold, Silver & Diamond</h2>
+
+        <div class="s-2-d-1">
+            <div>
+                <h1
+                    style="font-family: 'Jost', sans-serif;font-weight: 500;color: #f0f0f0;font-size: 14px;letter-spacing: 3.5px;">
+                    JEWELS YOU LOVE FOREVER</h1>
+                <h2
+                    style="font-size: 46px;color: #f0f0f0;font-weight: 700;font-family: 'Jost', sans-serif;margin-top: 30px;line-height: 60px;letter-spacing: 2px;">
+                    Hand Made Beautifully Designed Gold, Silver & Diamond</h2>
+
+            </div>
         </div>
-        
-        <div class="collections-grid">
-            <div class="collection-item">
-                <div class="collection-image" style="background-image:url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Collections-img-03-850x1024.webp);"></div>
-                <h1>WEDDING RINGS</h1>
+        <div class="s-2-d-2">
+            <div
+                style="background-image:url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Collections-img-03-850x1024.webp);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                <div></div>
             </div>
-            
-            <div class="collection-item">
-                <div class="collection-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Collections-img-02-850x1024.webp);"></div>
-                <h1>WOMEN EARRING</h1>
+            <h1>WEDDING RINGS</h1>
+        </div>
+
+        <div class="s-2-d-2">
+            <div
+                style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Collections-img-02-850x1024.webp);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                <div></div>
             </div>
-            
-            <div class="collection-item">
-                <div class="collection-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Collections-img-01-850x1024.webp);"></div>
-                <h1>PENDANTS</h1>
+            <h1>WOMEN EARRING</h1>
+        </div>
+
+        <div class="s-2-d-2">
+            <div
+                style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Collections-img-01-850x1024.webp);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                <div></div>
             </div>
-            
-            <div class="collection-item">
-                <div class="collection-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Collections-img-04-768x925.webp);"></div>
-                <h1>WOMEN BRACELET</h1>
+            <h1>PENDANTS</h1>
+        </div>
+        <div class="s-2-d-2">
+            <div
+                style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Collections-img-04-768x925.webp);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                <div></div>
             </div>
+            <h1>WOMEN BRACELET</h1>
+        </div>
+        <div
+            style="height: 3px; background-color:#3c3c3cd9;width: 97%;float: left;margin-left: 20px;margin-top:50px;border-radius: 2px;">
+            <div style="height: 100%;width: 13%;background-color: #BB9D7B;border-radius: 2px;"></div>
         </div>
     </section>
 
     <section class="section-3">
-        <div class="offer-container">
-            <div class="offer-item">
-                <div class="offer-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Offer-banner-img-02-768x845.webp);">
-                    <div class="discount-badge">
-                        <div class="discount-circle">
-                            <div class="discount-percent">60%</div>
-                            <div class="discount-text">SALE</div>
+        <div class="s-3-d-1">
+            <div
+                style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Offer-banner-img-02-768x845.webp);background-repeat: no-repeat;background-position: center;background-size: cover;">
+                <div class="s-3-svg"
+                    style="height: 150px;width: 152px;margin-top: -50px;margin-left: -30px;padding: 19px 19px;">
+                    <div style="height: 111px;width: 111px;border: 3px solid white;border-radius: 50%;">
+                        <h1
+                            style="font-size: 40px;font-weight:bold;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: #f0f0f0;padding: 10px 15px;">
+                            60%</h1>
+                        <div class="d" style="margin-left: 4px;text-align: center;">
+                            <h3
+                                style="font-size: 14px;color: #BB9D7B;font-family: 'Jost', sans-serif;margin-top: -1px;letter-spacing: 2px;">
+                                SALE</h3>
                         </div>
+
                     </div>
                 </div>
-                
-                <div class="offer-content">
-                    <h1>ROSE & YELLOW GOLD</h1>
-                    <h2>Most Fashionable Jewelry That Fit In Seamlessly</h2>
-                    <button class="btn-1">SHOP COLLECTION</button>
-                </div>
+
+
+
             </div>
-            
-            <div class="offer-item">
-                <div class="offer-content">
-                    <h1>STANDOUT STYLE</h1>
-                    <h2>World's Finest Celebrity Style Jewelry</h2>
-                    <button class="btn-1">SHOP COLLECTION</button>
-                </div>
-                
-                <div class="offer-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Offer-banner-img-01-768x845.webp);">
-                    <div class="discount-badge" style="right: 50px; left: auto; top: 50px;">
-                        <div class="discount-circle">
-                            <div class="discount-percent">50%</div>
-                            <div class="discount-text">SALE</div>
+
+            <h1
+                style="color: #BB9D7B;font-size: 14px;font-family: 'Jost', sans-serif;font-weight: 500;margin-top: 48px;letter-spacing: 3px;">
+                ROSE & YELLOW GOLD</h1>
+            <h2
+                style="color: #f0f0f0;font-size: 42px;font-family: 'Jost', sans-serif;font-weight: 500;margin-top: 10px;">
+                Most Fashionable Jewelry That Fit In Seamlessly</h2>
+            <button class="btn-1"
+                style="width: 214px;height: 50px;font-size: 14px;letter-spacing: 2px;font-weight: 500;margin-top: 30px;">SHOP
+                COLLECTION</button>
+
+
+        </div>
+        <div class="s-3-d-2">
+            <h1
+                style="color: #BB9D7B;font-size: 14px;font-family: 'Jost', sans-serif;font-weight: 500;letter-spacing: 3px;">
+                STANDOUT STYLE</h1>
+            <h2
+                style="color: #f0f0f0;font-size: 42px;font-family: 'Jost', sans-serif;font-weight: 500;margin-top: 10px;width: 590px;">
+                World's Finest Celebrity Style Jewelry </h2>
+            <button class="btn-1"
+                style="width: 214px;height: 50px;font-size: 14px;letter-spacing: 2px;font-weight: 500;margin-top: 30px;">SHOP
+                COLLECTION</button>
+
+
+            <div class="s32-d-1">
+                <div class="s-3-2-svg"
+                    style="height: 150px;width: 152px;float: right;margin-top: 95%;margin-right:-30px;">
+                    <div class="svg-d-1">
+                        <h1
+                            style="font-size: 40px;font-weight:bold;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: #f0f0f0;padding: 10px 15px;">
+                            50%</h1>
+                        <div class="svg-d-1-1">
+                            <h3
+                                style="font-size: 14px;color: #BB9D7B;font-family: 'Jost', sans-serif;margin-top: -1px;letter-spacing: 2px;">
+                                SALE</h3>
                         </div>
+
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </section>
 
     <section class="section-4">
-        <div class="products-container">
-            <div class="products-header">
-                <h1>SAY HI FOR NEW FAVORITES</h1>
-                <p>Ordinary Jewelry Isn't Worth Living For</p>
+        <div class="s4-main">
+            <div class="s-4-d-1">
+                <h1 style="font-size: 14px;letter-spacing: 2px;word-spacing: 2px;font-weight: 700;">SAY HI FOR NEW
+                    FAVORITES</h1>
+                <p style="font-size: 46px;letter-spacing: 2px;font-weight: 600;">Ordinary Jewelry Isn't Worth Living For
+                </p>
             </div>
-            
-            <div class="products-divider"></div>
-            
-            <div class="category-tabs">
-                <div class="category-tab">JEWELRY SET COLLECTION</div>
-                <div class="category-tab">EARRING COLLECTION</div>
-                <div class="category-tab">BRACELET COLLECTION</div>
-                <div class="category-tab">NECK CHAIN COLLECTION</div>
-                <div class="category-tab">RING COLLECTION</div>
+            <div class="s-4-d-2">
+                <div class="s-4-d-2-1"></div>
+                <div class="s-4-d-2-2"
+                    style="margin-left: 64px;background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-tab-img-04.webp);">
+                </div>
+                <div class="s-4-d-2-2"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-tab-img-01.webp);">
+                </div>
+                <div class="s-4-d-2-2"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-tab-img-05.webp);">
+                </div>
+                <div class="s-4-d-2-2"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-tab-img-03.webp);">
+                </div>
+                <div class="s-4-d-2-2"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-tab-img-02.webp);">
+                </div>
+                <div class="s-4-d-2-1" style="float: right;margin-right: -2px;"></div>
+
             </div>
-            
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-8-9.webp);"></div>
-                    <h3 class="product-title">Australian Ring</h3>
-                    <p class="product-price">$8.00 - $380.00</p>
-                    <div class="product-rating">
-                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i><i class='bx bx-star'></i>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-7.1.webp);"></div>
-                    <h3 class="product-title">Vintage Hoop Earring</h3>
-                    <p class="product-price">$8.00 - $680.00</p>
-                    <div class="product-rating">
-                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-6.webp);"></div>
-                    <h3 class="product-title">Mixed Cut Bracelet</h3>
-                    <p class="product-price">$8.00 - $920.00</p>
-                    <div class="product-rating">
-                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-5-1.webp);"></div>
-                    <h3 class="product-title">Brazil Eternity Bracelet</h3>
-                    <p class="product-price">$8.00 - $840.00</p>
-                    <div class="product-rating">
-                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-4.webp);"></div>
-                    <h3 class="product-title">Trendy Hoop Earring</h3>
-                    <p class="product-price">$8.00 - $477.00</p>
-                    <div class="product-rating">
-                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i><i class='bx bx-star'></i>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-3-8.webp);"></div>
-                    <h3 class="product-title">Pendant Necklace</h3>
-                    <p class="product-price">$8.00 - $653.00</p>
-                    <div class="product-rating">
-                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i><i class='bx bx-star'></i>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-2.webp);"></div>
-                    <h3 class="product-title">Huggie Earring</h3>
-                    <p class="product-price">$8.00 - $415.00</p>
-                    <div class="product-rating">
-                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-1.webp);"></div>
-                    <h3 class="product-title">Pearl Earring</h3>
-                    <p class="product-price">$8.00 - $354.00</p>
-                    <div class="product-rating">
-                        <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i><i class='bx bx-star'></i>
-                    </div>
-                </div>
+            <div class="s-4-d-3">
+                <div class="s-4-d-3-1" style="margin-left: 64px;">JEWELRY SET COLLECTION</div>
+                <div class="s-4-d-3-1" style="margin-left: 120px;">EARRING COLLECTION</div>
+                <div class="s-4-d-3-1"> BRACELET COLLECTION</div>
+                <div class="s-4-d-3-1">NECK CHAIN COLLECTION</div>
+                <div class="s-4-d-3-1">RING COLLECTION</div>
             </div>
+
+            <div class="s-4-d-4">
+                <div class="s-4-d-4-1"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-8-9.webp);">
+                </div>
+                <h1
+                    style="font-size: 26px;font-family: 'Jost',sans-serif;color: #f0f0f0;font-weight: 500;margin-top: 20px;">
+                    Australian Ring</h1>
+                <p style="color: #8f8e8e;font-size: 16px;font-family: 'Jost',sans-serif;">$8.00 - $380.00</p>
+                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i>
+
+            </div>
+            <div class="s-4-d-4">
+                <div class="s-4-d-4-1"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-7.1.webp);">
+                </div>
+                <h1
+                    style="font-size: 26px;font-family: 'Jost',sans-serif;color: #f0f0f0;font-weight: 500;margin-top: 20px;">
+                    Vintage Hoop Earring</h1>
+                <p style="color: #8f8e8e;font-size: 16px;font-family: 'Jost',sans-serif;">$8.00 - $680.00</p>
+                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i><i class='bx bx-star' ></i>
+            </div>
+            <div class="s-4-d-4">
+                <div class="s-4-d-4-1"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-6.webp);">
+                </div>
+                <h1
+                    style="font-size: 26px;font-family: 'Jost',sans-serif;color: #f0f0f0;font-weight: 500;margin-top: 20px;">
+                    Mixed Cut Bracelet</h1>
+                <p style="color: #8f8e8e;font-size: 16px;font-family: 'Jost',sans-serif;">$8.00 - $920.00</p>
+                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i><i class='bx bx-star' ></i>
+
+
+            </div>
+            <div class="s-4-d-4">
+                <div class="s-4-d-4-1"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-5-1.webp);">
+                </div>
+                <h1
+                    style="font-size: 26px;font-family: 'Jost',sans-serif;color: #f0f0f0;font-weight: 500;margin-top: 20px;">
+                    Brazil Eternity Bracelet</h1>
+                <p style="color: #8f8e8e;font-size: 16px;font-family: 'Jost',sans-serif;">$8.00 - $840.00</p>
+                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i><i class='bx bx-star' ></i>
+
+            </div>
+
+
+
+
+            <div class="s-4-d-4" style="margin-top: 0%;">
+                <div class="s-4-d-4-1"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-4.webp);">
+                </div>
+                <h1
+                    style="font-size: 26px;font-family: 'Jost',sans-serif;color: #f0f0f0;font-weight: 500;margin-top: 20px;">
+                    Trendy Hoop Earring</h1>
+                <p style="color: #8f8e8e;font-size: 16px;font-family: 'Jost',sans-serif;">$8.00 - $477.00</p>
+                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i>
+
+            </div>
+            <div class="s-4-d-4" style="margin-top: 0%;">
+                <div class="s-4-d-4-1"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-3-8.webp);">
+                </div>
+                <h1
+                    style="font-size: 26px;font-family: 'Jost',sans-serif;color: #f0f0f0;font-weight: 500;margin-top: 20px;">
+                    Pendant Necklace</h1>
+                <p style="color: #8f8e8e;font-size: 16px;font-family: 'Jost',sans-serif;">$8.00 - $653.00</p>
+                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i>
+
+            </div>
+            <div class="s-4-d-4" style="margin-top: 0%;">
+                <div class="s-4-d-4-1"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-2.webp);">
+                </div>
+                <h1
+                    style="font-size: 26px;font-family: 'Jost',sans-serif;color: #f0f0f0;font-weight: 500;margin-top: 20px;">
+                    Huggie Earring</h1>
+                <p style="color: #8f8e8e;font-size: 16px;font-family: 'Jost',sans-serif;">$8.00 - $415.00</p>
+                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i><i class='bx bx-star' ></i>
+
+            </div>
+            <div class="s-4-d-4" style="margin-top: 0%;">
+                <div class="s-4-d-4-1"
+                    style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-1.webp);">
+                </div>
+                <h1
+                    style="font-size: 26px;font-family: 'Jost',sans-serif;color: #f0f0f0;font-weight: 500;margin-top: 20px;">
+                    Pearl Earring</h1>
+                <p style="color: #8f8e8e;font-size: 16px;font-family: 'Jost',sans-serif;">$8.00 - $354.00</p>
+                <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star-half' ></i><i class='bx bx-star' ></i>
+
+            </div>
+
+
+
+
         </div>
     </section>
-
     <section class="section-5">
-        <div class="stats-container">
-            <div class="stats-item">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number">1025<span>+</span></div>
-                        <div class="stat-label">SATISFIED CUSTOMERS</div>
-                    </div>
-                    
-                    <div class="stat-item">
-                        <div class="stat-number">20<span>+</span></div>
-                        <div class="stat-label">YEAR OF EXPERIENCE</div>
-                    </div>
-                    
-                    <div class="stat-item">
-                        <div class="stat-number">10<span>K</span></div>
-                        <div class="stat-label">MODELS AVAILABLE</div>
-                    </div>
+        <div class="s-5-d-1">
+            <div class="s-5-d-1-1">
+                <div>
+                    <h1 style="font-size: 34.5px;font-family: 'just',sans-serif;color: #f0f0f0;font-weight: 600;">1025
+                        <spam style="color: #BB9D7B;">+</spam>
+                    </h1>
+                    <h2
+                        style="color: #f0f0f0;font-size: 16px;font-family: 'Jost',sans-serif; letter-spacing: 3px; font-weight: 400;margin-top: 5px;">
+                        SATISFIED CUSTOMERS</h2>
                 </div>
+                <div>
+                    <h1 style="font-size: 34.5px;font-family: 'just',sans-serif;color: #f0f0f0;font-weight: 600;">20
+                        <spam style="color: #BB9D7B;">+</spam>
+                    </h1>
+                    <h2
+                        style="color: #f0f0f0;font-size: 16px;font-family: 'Jost',sans-serif; letter-spacing: 3px; font-weight: 400;margin-top: 5px;">
+                        YEAR OF EXPERIENCE</h2>
+                </div>
+                <div style="border: none;">
+                    <h1 style="font-size: 34.5px;font-family: 'just',sans-serif;color: #f0f0f0;font-weight: 600;">10
+                        <spam style="color: #BB9D7B;font-weight: 600;">K</spam>
+                    </h1>
+                    <h2
+                        style="color: #f0f0f0;font-size: 16px;font-family: 'Jost',sans-serif; letter-spacing: 3px; font-weight: 400;margin-top: 5px;">
+                        MODELS AVAILABLE</h2>
+                </div>
+
             </div>
         </div>
-        
-        <div class="faq-container">
-            <div class="faq-header">
-                <h1>FAQ</h1>
-                <h2>Frequently Asked Questions</h2>
-            </div>
-            
-            <div class="faq-item">
-                <button class="faq-question">
-                    Do jewels that are pre-ordered cost more?
-                    <span class="faq-arrow"><i class='bx bxs-chevrons-down'></i></span>
-                </button>
-                <div class="faq-answer">
-                    <p>Nascetur ridiculus mus mauris vitae ultricies leo integer. Id cursus metus aliquam eleifend mi in. Vel eros donec ac odio tempor. Ac placerat vestibulum lectus mauris. Suspendisse interdum.</p>
+
+        <div class="s-5-d-2">
+            <div class="s-5-d-2-1">
+                <h1 style="color: #f0f0f0;font-size: 16px;font-family: 'Jost',sans-serif;letter-spacing: 3px;">FAQ</h1>
+                <h2
+                    style="font-size: 47px; font-family: 'Jost', sans-serif; color: #f0f0f0; font-weight: 600; margin-bottom: 30px;">
+                    Frequently Asked Questions</h2>
+
+                <div class="s-5-d-2-1-1">
+                    <div class="s-5-d-2-1-1-item active">
+                        <button class="s-5-d-2-1-1-header">
+                            Do jewels that are pre-ordered cost more?
+                            <span class="s-5-d-2-1-1-arrow"><i class='bx bxs-chevrons-down'></i></span>
+                        </button>
+                        <div class="s-5-d-2-1-1-body">
+                            <p style="width: 717px;">Nascetur ridiculus mus mauris vitae ultricies leo integer. Id
+                                cursus metus aliquam
+                                eleifend mi in. Vel eros donec ac odio tempor. Ac placerat vestibulum lectus mauris.
+                                Suspendisse interdum.</p>
+                        </div>
+                    </div>
+
+                    <div class="s-5-d-2-1-1-item">
+                        <button class="s-5-d-2-1-1-header">
+                            Do you display your jewelry?
+                            <span class="s-5-d-2-1-1-arrow"><i class='bx bxs-chevrons-down'></i></span>
+                        </button>
+                        <div class="s-5-d-2-1-1-body">
+                            <p style="width: 717px;">Arcu bibendum at varius vel pharetra vel. Purus ut faucibus
+                                pulvinar elementum integer.
+                                Ornare aenean euismod elementum nisi quis eleifend quam. Enim diam vulputate ut pharetra
+                                sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="s-5-d-2-1-1-item">
+                        <button class="s-5-d-2-1-1-header">
+                            How should I apply my coupon code?
+                            <span class="s-5-d-2-1-1-arrow"><i class='bx bxs-chevrons-down'></i></span>
+                        </button>
+                        <div class="s-5-d-2-1-1-body">
+                            <p style="width: 717px;">Volutpat lacus laoreet non curabitur gravida. Euismod nisi porta
+                                lorem mollis aliquam. Elit scelerisque mauris pellentesque pulvinar consequat nisl vel
+                                pretium lectus pretium viverra suspendisse.</p>
+                        </div>
+                    </div>
+
+                    <div class="s-5-d-2-1-1-item">
+                        <button class="s-5-d-2-1-1-header">
+                            Can I change my order after it has been shipped?
+                            <span class="s-5-d-2-1-1-arrow"><i class='bx bxs-chevrons-down'></i></span>
+                        </button>
+                        <div class="s-5-d-2-1-1-body">
+                            <p style="width: 717px;">Vel pretium lectus quam id leo in. Sit amet luctus venenatis lectus
+                                magna fringilla. Aenean vel elit scelerisque mauris pellentesque. Dui ut ornare lectus
+                                sit. Leo urna molestie at elementum eu facilisis.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="faq-item">
-                <button class="faq-question">
-                    Do you display your jewelry?
-                    <span class="faq-arrow"><i class='bx bxs-chevrons-down'></i></span>
-                </button>
-                <div class="faq-answer">
-                    <p>Arcu bibendum at varius vel pharetra vel. Purus ut faucibus pulvinar elementum integer. Ornare aenean euismod elementum nisi quis eleifend quam. Enim diam vulputate ut pharetra sit amet.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <button class="faq-question">
-                    How should I apply my coupon code?
-                    <span class="faq-arrow"><i class='bx bxs-chevrons-down'></i></span>
-                </button>
-                <div class="faq-answer">
-                    <p>Volutpat lacus laoreet non curabitur gravida. Euismod nisi porta lorem mollis aliquam. Elit scelerisque mauris pellentesque pulvinar consequat nisl vel pretium lectus pretium viverra suspendisse.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <button class="faq-question">
-                    Can I change my order after it has been shipped?
-                    <span class="faq-arrow"><i class='bx bxs-chevrons-down'></i></span>
-                </button>
-                <div class="faq-answer">
-                    <p>Vel pretium lectus quam id leo in. Sit amet luctus venenatis lectus magna fringilla. Aenean vel elit scelerisque mauris pellentesque. Dui ut ornare lectus sit. Leo urna molestie at elementum eu facilisis.</p>
-                </div>
-            </div>
-            
-            <div class="faq-contact">
-                <h3>Still Have Questions?</h3>
-                <p>Can't find the answer you're looking for? Please chat to our friendly team.</p>
-                <button class="btn-1" style="background: transparent;">GET IN TOUCH</button>
+
+            <div class="s-5-d-2-2">
+                <h3
+                    style="font-family: 'Jost', sans-serif; color: #f0f0f0; font-weight: 600; margin-bottom: 10px;letter-spacing: 1px;">
+                    Still Have Questions?</h3>
+                <p style="font-family: 'Jost', sans-serif; color: #f0f0f0; font-size: 16px; margin-bottom: 20px;">Can't
+                    find the answer you're looking for? Please chat to our friendly team.</p>
+                <button class="btn-1" style="padding: 12px 24px;background: transparent;">GET IN TOUCH</button>
             </div>
         </div>
+
     </section>
 
     <section class="section-6">
-        <div class="video-container">
-            <video width="100%" controls autoplay muted loop>
-                <source src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/Jewel-video-output.mp4" type="video/mp4">
+        <div class="s-6-d-1">
+            <video width="100%" controls autoplay muted loop style="height: 100%; object-fit: cover;">
+                <source src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/Jewel-video-output.mp4"
+                    type="video/mp4">
             </video>
         </div>
+
     </section>
 
-    <section class="section-7">
-        <div class="promo-header">
-            <h1>EVERLASTING COLLECTION</h1>
-            <h2>Creators of Fine Jewellery</h2>
-        </div>
-        
-        <div class="promo-grid">
-            <!-- First Large Box -->
-            <div class="promo-item">
-                <div class="promo-bg" style="background-image: url('https://darkfashion.wpengine.com/wp-content/uploads/2023/10/home-3-grid-banner-image-1a.jpg');"></div>
-                <div class="promo-content" style="max-width: 399px;">
-                    <div class="promo-discount">SAVE UP TO 35%</div>
-                    <div class="promo-title">Authentic Gold Pendants</div>
-                    <button class="btn-1">ORDER NOW</button>
-                </div>
-            </div>
-            
-            <!-- Second Large Box -->
-            <div class="promo-item">
-                <div class="promo-bg" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/df-offer-banner-img-5.jpg);"></div>
-                <div class="promo-content" style="right: 0; max-width: 379px;">
-                    <div class="promo-discount">SAVE UP TO 25%</div>
-                    <div class="promo-title">Fashion Forward Rings</div>
-                    <button class="btn-1">ORDER NOW</button>
-                </div>
-            </div>
-            
-            <!-- Third Large Box -->
-            <div class="promo-item">
-                <div class="promo-bg" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/df-offer-banner-img-2.jpg);"></div>
-                <div class="promo-content" style="right: 0; max-width: 399px;">
-                    <div class="promo-discount">SAVE UP TO 25%</div>
-                    <div class="promo-title">Handcrafted Designer Earrings</div>
-                    <button class="btn-1">ORDER NOW</button>
-                </div>
-            </div>
-            
-            <!-- First Small Box -->
-            <div class="promo-item small">
-                <div class="promo-bg" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/home-3-grid-banner-image-4a.jpg);"></div>
-                <div class="promo-content" style="text-align: center; width: 100%;">
-                    <div class="promo-discount">SAVE UP TO 50%</div>
-                    <div class="promo-title">Diamond Necklaces</div>
-                    <button class="btn-1">ORDER NOW</button>
-                </div>
-            </div>
-            
-            <!-- Second Small Box -->
-            <div class="promo-item small">
-                <div class="promo-bg" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/df-offer-banner-img-4.jpg);"></div>
-                <div class="promo-content" style="text-align: center; width: 100%;">
-                    <div class="promo-discount">SAVE UP TO 50%</div>
-                    <div class="promo-title">New Platinum Bracelets</div>
-                    <button class="btn-1">ORDER NOW</button>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="section-7">
+    <div class="s-7-d-1" style="height: 112px;width: 100%;margin-top: 110px;text-align: center;color: #f0f0f0;">
+      <h1 style="font-size: 14px;font-family: 'Jost',sans-serif;letter-spacing: 3px;font-weight: 600;">EVERLASTING COLLECTION</h1>
+      <h2 style="font-size: 45.5px;font-family: 'Jost',sans-serif;letter-spacing: 3px;font-weight: 500;margin-top: 10px;">Creators of Fine Jewellery</h2>
+    </div>
+
+    <!-- First Large Box -->
+    <div class="s-7-d-2">
+      <div class="bg-container" style="background-image: url('https://darkfashion.wpengine.com/wp-content/uploads/2023/10/home-3-grid-banner-image-1a.jpg');"></div>
+      <div class="promo-banner" style="height: 293px;width: 399px;line-height: 40px;margin-left: 20px;">
+        <div class="discount">SAVE UP TO 35%</div>
+        <div class="product-name">Authentic Gold Pendants</div>
+        <button class="btn-1" id="btn-1">ORDER NOW</button>
+      </div>
+    </div>
+
+    <!-- Second Large Box -->
+    <div class="s-7-d-2" style="margin-left: 30px;">
+      <div class="bg-container" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/df-offer-banner-img-5.jpg);"></div>
+      <div class="promo-banner" style="height: 293px;width: 379px;line-height: 44px;margin-left: 289px;">
+        <div class="discount">SAVE UP TO 25%</div>
+        <div class="product-name">Fashion Forward Rings</div>
+        <button class="btn-1" id="btn-1">ORDER NOW</button>
+      </div>
+    </div>
+
+    <!-- Third Large Box -->
+    <div class="s-7-d-2" style="margin-top: 30px;">
+      <div class="bg-container" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/df-offer-banner-img-2.jpg);"></div>
+      <div class="promo-banner" style="height: 293px;width: 399px;line-height: 45px;margin-left: 289px;">
+        <div class="discount">SAVE UP TO 25%</div>
+        <div class="product-name">Handcrafted Designer Earrings</div>
+        <button class="btn-1" id="btn-1">ORDER NOW</button>
+      </div>
+    </div>
+
+    <!-- First Small Box -->
+    <div class="s-7-d-3">
+      <div class="bg-container" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/home-3-grid-banner-image-4a.jpg);"></div>
+      <div class="promo-banner" style="text-align: center;height: 266px; width: 100%;margin-top: 100px;">
+        <div class="discount">SAVE UP TO 50%</div>
+        <div class="product-name" style="line-height: 44px;font-size: 40px;">Diamond Necklaces</div>
+        <button class="btn-1" id="btn-1" style="margin-left: 87px;">ORDER NOW</button>
+      </div>
+    </div>
+
+    <!-- Second Small Box -->
+    <div class="s-7-d-3">
+      <div class="bg-container" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/df-offer-banner-img-4.jpg);"></div>
+      <div class="promo-banner" style="text-align: center;height: 266px; width: 100%;margin-top: 100px;">
+        <div class="discount">SAVE UP TO 50%</div>
+        <div class="product-name" style="line-height: 44px;font-size: 40px;">New Platinum Bracelets</div>
+        <button class="btn-1" id="btn-1" style="margin-left: 87px;">ORDER NOW</button>
+      </div>
+      
+    </div>
+  </section>
 
     <section class="section-8">
-        <div class="blog-header">
-            <h1>RECENT UPDATE</h1>
-            <h2>News & Blogs</h2>
+        <div class="s-8-d-1" style="height: 112px;width: 100%;margin-top: 110px;text-align: center;color: #f0f0f0;">
+      <h1 style="font-size: 14px;font-family: 'Jost',sans-serif;letter-spacing: 3px;font-weight: 600;">RECENT UPDATE</h1>
+      <h2 style="font-size: 45.5px;font-family: 'Jost',sans-serif;letter-spacing: 3px;font-weight: 600;margin-top: 10px;">News & Blogs</h2>
+    </div>
+
+    <div class="s-8-d-2" style="margin-left: 40px;">
+        <div class="s8-d-2-1" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-9-1000x600.webp);">
+        </div>
+        <div class="s8-d-2-2">
+           <h1 style="font-size: 16px;font-family: 'Jost',sans-serif;font-weight: 400;letter-spacing: 2px;">OCTOBER, 2025</h1>
+            <h2 style="font-size: 30px;font-family: 'Jost',sans-serif;font-weight: 400;letter-spacing: 0px;margin-top: 15px;">Modern Bracelet For Personal Adornment</h2>
+            <button class="btn-3">READ MORE</button>
         </div>
         
-        <div class="blog-grid">
-            <div class="blog-card">
-                <div class="blog-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-9-1000x600.webp);"></div>
-                <div class="blog-content">
-                    <div class="blog-date">OCTOBER, 2025</div>
-                    <h2 class="blog-title">Modern Bracelet For Personal Adornment</h2>
-                    <button class="btn-3">READ MORE</button>
-                </div>
-            </div>
-            
-            <div class="blog-card">
-                <div class="blog-image" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-8-768x461.webp);"></div>
-                <div class="blog-content">
-                    <div class="blog-date">OCTOBER, 2025</div>
-                    <h2 class="blog-title">Best Destination To Buy Gold Necklace</h2>
-                    <button class="btn-3">READ MORE</button>
-                </div>
-            </div>
+    </div>
+    <div class="s-8-d-2">
+        <div class="s8-d-2-1" style="background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-8-768x461.webp);">
         </div>
+        <div class="s8-d-2-2">
+           <h1 style="font-size: 16px;font-family: 'Jost',sans-serif;font-weight: 400;letter-spacing: 2px;">OCTOBER, 2025</h1>
+            <h2 style="font-size: 30px;font-family: 'Jost',sans-serif;font-weight: 400;letter-spacing: 0px;margin-top: 15px;">Best Destination To Buy Gold Necklace</h2>
+            <button class="btn-3">READ MORE</button>
+        </div>
+    </div>
     </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="scrolling-text">
-                <div class="scrolling-content">
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>casual</h1>
-                    </div>
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>party</h1>
-                    </div>
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>work</h1>
-                    </div>
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>business</h1>
-                    </div>
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>formal</h1>
-                    </div>
-                    <!-- Duplicate for continuous scrolling -->
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>casual</h1>
-                    </div>
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>party</h1>
-                    </div>
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>work</h1>
-                    </div>
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>business</h1>
-                    </div>
-                    <div class="scrolling-item">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
-                        <h1>formal</h1>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/Light-logo.svg" alt="Dark Fashion Logo">
-                    </div>
-                    <p>Quisque eleifend eu dolor a pulvinar. Vestibulum auctor dolor justo, a dignissim orci rutrum a. Integer finibus mauris risus.</p>
-                </div>
+    
+
+<footer>
+  <div class="f-main">
+    <div class="f-d-1">
+      <div class="scrolling-text">
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>casual</h1>
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>party</h1>
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>work</h1>
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>business</h1>
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>formal</h1>
+        <!-- Duplicate-->
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>casual</h1>
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>party</h1>
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>work</h1>
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>business</h1>
+        <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/star-icon-color.svg" alt="star">
+        <h1>formal</h1>
+      </div>
+    </div>
+
+        <div class="f-d-2" style="height: 139px;width: 301px;margin-left: 2%;margin-top: 66px;float: left; ">
+    <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/Light-logo.svg" alt="" style="">
+    <p style="color: #f0f0f0;font-family: 'Jost',sans-serif;margin-top: 10px;line-height: 25px;">Quisque eleifend eu dolor a pulvinar. Vestibulum auctor dolor justo, a dignissim orci rutrum a. Integer finibus mauris risus.</p>
+
+    </div>
+
+    <div class="f-d-3" style="color: #f0f0f0;font-size: 42px;margin-top: 66px;margin-left: 60px;float: left; width: 540px;height: 139px;">
+        <h1 style="color: #f0f0f0;font-size: 25px;font-family: 'Jost',sans-serif;font-weight: 500;">Get the best stories into your inbox!</h1>
+        <input type="text" name="text" placeholder="Mail" style="height: 69px;width: 300px;padding-left: 40px;font-size: 18px;background-color: #3c3c3c8e;margin-top: 20px;float: left;color: #f0f0f0;border: none;">
+        <button style="height: 68px;width: 19%;margin-left: 0px;float: left;margin-top: 20px;border-left:1px solid white;background-color: #3c3c3c8e;color: #f0f0f0;cursor: pointer;">Subscribe</button>
+    </div>
+
+    <div class="f-d-4" style="height: 139px; width: 912px;float: left;margin-left: 2%;margin-top: 115px;">
+        <div class="fd-4-1" style="height: 100%;width: 260px;float: left;">
+            <h1 style="color: #f0f0f0;font-size: 30px;font-family: 'Jost',sans-serif;font-weight: 500;">Store Address</h1><br>
+            <?xml version="1.0" encoding="utf-8"?>
+<!-- License: MIT. Made by artcoholic: https://github.com/artcoholic/akar-icons -->
+<svg width="42px" height="40px" float="left" font-size="25px" margin-top="10px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="10" r="3" stroke="#f0f0f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 2C7.58172 2 4 5.58172 4 10C4 11.8919 4.40209 13.1304 5.5 14.5L12 22L18.5 14.5C19.5979 13.1304 20 11.8919 20 10C20 5.58172 16.4183 2 12 2Z" stroke="#f0f0f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            <!-- <i class="fa-solid fa-bag-shopping" style="float: left;font-size: 25px;margin-top: 10px;"></i> -->
+            <p style="margin-left: 45px;font-family: 'Jost',sans-serif;color: #f0f0f0;float: left;margin-top: -40px;"> No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+        </div>
+        <div class="fd-4-1" style="height: 100%;width: 260px;float: left;margin-left: 97px;font-family: 'Jost',sans-serif;">
+            <h1 style="color: #f0f0f0;font-size: 30px;font-family: 'Jost',sans-serif;font-weight: 500;">Contact Us</h1><br>
+            <i class="fa-regular fa-envelope" style="float: left;font-size: 25px;margin-top: 0px;margin-right: 15px;"></i><p>Ashu1234@gmail.com</p><br>
+            <i class='bx bx-phone-call' style="float: left;font-size: 25px;margin-top: 0px;margin-right: 15px;"></i><p>000 - 123 - 456789</p>
+           
+        </div>
+        <div class="fd-4-1" style="height: 100%;width: 260px;float: left;margin-left: 33px;">
+            <h1 style="color: #f0f0f0;font-size: 30px;font-family: 'Jost',sans-serif;font-weight: 500;">Contact Us</h1><br>
                 
-                <div class="footer-newsletter">
-                    <h3>Get the best stories into your inbox!</h3>
-                    <div class="newsletter-form">
-                        <input type="text" placeholder="Mail">
-                        <button>Subscribe</button>
-                    </div>
-                </div>
-                
-                <div class="footer-contact">
-                    <h3>Store Address</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
-                    </div>
-                    
-                    <h3 style="margin-top: 30px;">Contact Us</h3>
-                    <div class="contact-item">
-                        <i class="far fa-envelope"></i>
-                        <p>Ashu1234@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class='bx bx-phone'></i>
-                        <p>000 - 123 - 456789</p>
-                    </div>
-                </div>
-                
-                <div class="footer-gallery">
-                    <h3>Gallery</h3>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-1.jpg" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-2.jpg" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-3.jpg" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-4.jpg" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-6.jpg" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-5-3-2.webp" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-instagram-1.jpg" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-instagram-2.jpg" alt="Gallery Image">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-instagram-3.jpg" alt="Gallery Image">
-                        </div>
-                    </div>
-                    
-                    <div class="social-icons">
-                        <i class='bx bxl-facebook'></i>
-                        <i class='bx bxl-instagram'></i>
-                        <i class='bx bxl-behance'></i>
-                        <i class='bx bxl-linkedin'></i>
-                        <i class='bx bxl-twitter'></i>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <h1><span>Ashu!</span>© 2023 WeDesignTech All Rights Reserved</h1>
+            <div>
+                <i class='bx bxl-facebook' style="margin-left: 0px;"></i><i class='bx bxl-instagram' ></i><i class='bx bxl-behance' ></i><i class='bx bxl-linkedin' ></i><i class='bx bxl-twitter' ></i>
             </div>
         </div>
-    </footer>
+        
+    </div>
 
-    <script>
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(header => {
-            header.addEventListener('click', () => {
-                const item = header.parentElement;
-                const isActive = item.classList.contains('active');
-                
-                // Close all items first
-                document.querySelectorAll('.faq-item').forEach(i => {
-                    i.classList.remove('active');
-                });
-                
-                // Open clicked item if it wasn't active
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
-        });
-        
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-        });
-        
-        // Responsive adjustments
-        function handleResize() {
-            if (window.innerWidth > 992) {
-                navMenu.style.display = 'flex';
-            } else {
-                navMenu.style.display = 'none';
-            }
-        }
-        
-        window.addEventListener('resize', handleResize);
-        handleResize();
-    </script>
+    <div class="f-d-5" style="width: 309px; height: 357px;float: left;margin-left: 180px;margin-top: -139px;">
+        <h1 style="font-family: 'Jost',sans-serif;color: #f0f0f0;letter-spacing: 1px;font-weight: 500;">Gallery</h1>
+        <div style="margin-left: 0px;margin-top: 30px;"><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-1.jpg" alt=""> </div>
+        <div style="margin-top: 30px;"><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-2.jpg" alt=""></div>
+        <div style="margin-top: 30px;"><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-3.jpg" alt=""></div>
+        <div style="margin-left: 0px;"><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-4.jpg" alt=""></div>
+        <div><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/09/insta-6.jpg" alt=""></div>
+        <div><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/jewel-shop-5-3-2.webp" alt=""></div>
+        <div style="margin-left: 0px;"><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-instagram-1.jpg" alt=""></div>
+        <div><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-instagram-2.jpg" alt=""></div>
+        <div><img src="https://darkfashion.wpengine.com/wp-content/uploads/2023/10/blog-instagram-3.jpg" alt=""></div>
+    </div>
+    <div style="height: 85px; border-top: 1px solid #515151;float: left;width: 100%;margin-top: 50px;padding-left: 50px;padding-top: 30px;display: flex;">
+        <h1 style="font-family: 'Jost',sans-serif;font-size: 14px;letter-spacing: 1px;word-spacing: 2px;color: #f0f0f0;"><span style="color: greenyellow;">Ashu!</span>© 2023 WeDesignTech All Rights Reserved</h1>
+    </div>
+
+
+  </div>
+
+  
+
+</footer>
+
+
 </body>
+<script src="darkfashionscript.js">
+
+</script>
+
 </html>
