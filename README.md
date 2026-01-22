@@ -4,7 +4,7 @@
 # Information:
 
 ```
-# Dark Fashion - Premium Jewelry Website Template ✨
+Dark Fashion - Premium Jewelry Website Template ✨
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://jewelry-website-template.netlify.app/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://ashuquest.github.io/Jewelry-Website-Template-/)
@@ -16,18 +16,18 @@ A sophisticated, dark-themed jewelry e-commerce website template built with pure
 
 ![Dark Fashion Jewelry Website](https://raw.githubusercontent.com/ashuQuest/Jewelry-Website-Template-/main/preview.png)
 
-## 🌐 Live Demos
+🌐 Live Demos
 👉 [Netlify Demo](https://jewelry-website-template.netlify.app/)
 👉 [GitHub Pages Demo](https://ashuquest.github.io/Jewelry-Website-Template-/)
 
-## 📋 Project Overview
+📋 Project Overview
 Jewelry Website Template | HTML, CSS, JavaScript | GitHub
 August 2025
 Crafted a jewelry website template using HTML and CSS, integrating interactive functionalities via JavaScript. Added dynamic UI components including image sliders, hover animations, and navigational interactions to enhance usability. Preserved the original design aesthetics while boosting user engagement through subtle motion effects and refined code for maintainability and ensured smooth performance across multiple devices and screen sizes.
 
-## ✨ Features
+✨ Features
 
-### 🎨 Design
+🎨 Design
 - Dark Luxury Aesthetic - Elegant black and gold color scheme (#BB9D7B accent)
 - Fully Responsive - Works on all devices (desktop, tablet, mobile)
 - Smooth Animations - CSS transitions and hover effects
@@ -41,7 +41,7 @@ Crafted a jewelry website template using HTML and CSS, integrating interactive f
 - Newsletter Subscription
 - Shopping Cart Icon
 
-### ⚡ Interactive Elements
+⚡ Interactive Elements
 - Image zoom effects on hover
 - Video background integration
 - Scrolling text animations
@@ -50,7 +50,7 @@ Crafted a jewelry website template using HTML and CSS, integrating interactive f
 - Gallery with hover effects
 - Image sliders and navigation buttons
 
-## 📁 Project Structure
+📁 Project Structure
 
 ```
 Jewelry-Website-Template-/
@@ -98,9 +98,9 @@ open index.html
 10. Blog/News Section - Latest updates with cards
 11. Comprehensive Footer - Contact info, social media, image gallery, newsletter subscription
 
-## 🎨 Customization Guide
+🎨 Customization Guide
 
-### Change Colors:
+Change Colors:
 ```css
 :root {
   --primary-gold: #BB9D7B;    /* Main accent color */
@@ -110,48 +110,49 @@ open index.html
 }
 ```
 
-### Add Products:
+Add Products:
 Edit the product sections in `index.html` (lines with class `.s-4-d-4`)
 
-### Update Contact Information:
+Update Contact Information:
 Edit footer section in `index.html` lines 532-580
 
-### Change Images:
+Change Images:
 Replace image URLs in:
 - Background images in CSS (`background-image` properties)
 - Product images in HTML (`img` tags)
 - Logo in header (line 37)
 
-## 🌟 Technical Implementation Highlights
+🌟 Technical Implementation Highlights
 
-### 1. **Responsive Design Strategy**
+1. Responsive Design Strategy
 - Mobile-first approach with media queries
 - Flexible grid layouts using CSS Grid and Flexbox
 - Responsive typography that scales with screen size
 
-### 2. Performance Optimizations
+2. Performance Optimizations
 - Lazy loading for images
 - Minified external resources via CDN
 - Optimized CSS animations for 60fps
 
-### 3. Cross-Browser Compatibility
+3. Cross-Browser Compatibility
 - Vendor prefixes for CSS properties
 - Fallbacks for modern CSS features
 - JavaScript feature detection
 
-# 4. Code Maintainability
+4. Code Maintainability
 - Semantic HTML structure
 - Organized CSS with clear class naming
 - Modular JavaScript functions
 - Comprehensive comments throughout code
 
-## 📸 Screenshots
+📸 Screenshots
 
-| Desktop View | Mobile View |
-|--------------|-------------|
-| ![Desktop](https://via.placeholder.com/400x250/0a0a0a/BB9D7B?text=Desktop+View) | ![Mobile](https://via.placeholder.com/200x350/0a0a0a/BB9D7B?text=Mobile+View) |
+| Desktop View |
+|--------------|
+| ![Desktop](https://drive.google.com/file/d/19o-LqjtWjPNIOxLsneQbBVsAzmoh7m0N/view?usp=sharing) 
+| ![Desktop](https://drive.google.com/file/d/19o-LqjtWjPNIOxLsneQbBVsAzmoh7m0N/view?usp=sharing)
 
-## 🔧 Setup for Development
+🔧 Setup for Development
 
 1. Fork the repository on GitHub
 2. Clone your forked repository
@@ -167,14 +168,7 @@ git push origin main
 ```
 5. Create a Pull Request to contribute back
 
- 📞 Support & Contact
-
-Found a bug or have a feature request?  
-- 💬 [Open an Issue](https://github.com/ashuQuest/Jewelry-Website-Template-/issues)
-- 📧 Email: ashu1234@gmail.com
-- 🔗 Portfolio: [Your Portfolio Link]
-
-## 🤝 Contributing
+🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -184,11 +178,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+Acknowledgments
 
 - Icons by [BoxIcons](https://boxicons.com/) & [FontAwesome](https://fontawesome.com/)
 - Fonts by [Google Fonts](https://fonts.google.com/)
@@ -196,7 +190,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Hosting by [Netlify](https://www.netlify.com/) and [GitHub Pages](https://pages.github.com/)
 
 
-## 📊 Project Stats
+📊 Project Stats
 
 - Lines of Code**: ~1500
 - Development Time: August 2025
