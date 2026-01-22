@@ -1,0 +1,936 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/09/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+
+
+}
+
+header {
+    height: 68px;
+    /* border: 1px solid white; */
+    width: 100%;
+    z-index: 99999999;
+    position: sticky;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.575);
+
+
+}
+
+header ul {
+    /* border: 1px solid white; */
+    width: auto;
+    margin-left: 222px;
+    margin-top: 15px;
+    display: flex;
+    float: left;
+
+}
+
+header ul li {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #f0f0f0;
+    margin-left: 46px;
+    margin-top: 6px;
+    float: left;
+    font-weight: 200;
+    letter-spacing: 1px;
+
+
+
+}
+
+header ul li:hover {
+    color: #bb9d7b;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header ul li i {
+    font-size: 30px;
+}
+
+.section-1 {
+    height: 1143px;
+    /* border: 1px solid white; */
+    /* background-color: #9a1111; */
+
+}
+
+.section-1 .s-1-d-1 {
+    float: left;
+    height: 358px;
+    width: 641px;
+    /* border: 1px solid white; */
+    margin-left: 75px;
+    margin-top: 125px;
+
+
+}
+
+.section-1 .s-1-d-1 h1 {
+    color: #f0f0f0;
+    font-size: 61px;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.section-1 .s-1-d-2 {
+    height: 1099px;
+    width: 695px;
+    /* border: 1px solid white; */
+    float: left;
+    margin-left: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0)75%, #3c3c3c), url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/Rectangle-117-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(1px); */
+
+
+}
+
+.section-1 .s-1-d-2 div {
+    height: 1099px;
+    width: 695px;
+    background-color: #02020265;
+    padding-left: 108px;
+    padding-top: 940px;
+
+
+}
+
+.section-1 .s-1-d-3 {
+    width: 75px;
+    height: 700px;
+    border: 1px solid white;
+    float: left;
+
+}
+
+.section-1 .s-1-d-4 {
+    height: 263px;
+    width: 750px;
+    /* border: 1px solid white; */
+    float: left;
+    position: relative;
+    background-color: #1c1917;
+    margin-top: -426px;
+    margin-left: 50px;
+
+}
+
+.section-1 .s-1-d-4 div h2 {
+    font-size: 29px;
+    color: #f0f0f0;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 7px;
+    margin-top: 10px;
+
+}
+
+.section-1 .s-1-d-4 div h2:hover {
+    color: #bb9d7b;
+    transition: 0.4s ease-in-out;
+
+}
+
+.section-1 .s-1-d-4 button {
+    height: 50px;
+    width: 100px;
+    margin-top: 150px;
+    margin-left: 70px;
+    background: transparent;
+    color: #f0f0f0;
+    font-size: 15px;
+    letter-spacing: 3.5px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+
+}
+
+.section-1 .s-1-d-4 button:hover {
+    color: #bb9d7b;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.btn-1,
+.section-1 .s-1-d-4 div button {
+    background-color: #bb9d7b;
+    color: white;
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    border: 2px solid #bb9d7b;
+
+
+}
+
+.btn-1:hover,
+.section-1 .s-1-d-4 div button:hover {
+    background: transparent;
+    color: #bb9d7b;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+
+}
+
+.section-2 {
+    height: 764px;
+    /* border: 1px solid rgb(252, 2, 2); */
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+.section-2 .s-2-d-1 {
+    height: 218px;
+    width: 100%;
+    /* border: 1px solid white; */
+
+    /* background-color: ; */
+}
+
+.section-2 .s-2-d-1 div {
+    width: 705px;
+    height: 100%;
+    /* border: 1px solid white; */
+    float: left;
+    background-color: #000000;
+    margin-left: 20px;
+
+
+}
+
+.section-2 .s-2-d-2 {
+    height: 478px;
+    width: 353px;
+    /* border: 1px solid white; */
+    float: left;
+    margin-left: 20px;
+    color: #f0f0f0;
+
+
+}
+
+.section-2 .s-2-d-2 div {
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 417px;
+
+}
+
+.section-2 .s-2-d-2 div div {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+
+}
+
+.section-2 .s-2-d-2 div div:hover {
+    background-color: #00000067;
+    transition: 0.3s ease-in-out;
+
+}
+
+.section-2 .s-2-d-2 h1 {
+    font-size: 18px;
+    margin-top: 30px;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 6px;
+    font-weight: 500;
+
+}
+
+.section-2 .s-2-d-2:hover {
+    color: #bb9d7b;
+    transition: 0.3s ease-in-out;
+
+}
+
+.section-3 {
+    height: 1155px;
+    width: 100%;
+    /* border: 1px solid white; */
+    float: left;
+    margin-top: 130px;
+
+
+}
+
+.section-3 .s-3-d-1 {
+    height: 1151px;
+    width: 700px;
+    /* border: 1px solid white; */
+    float: left;
+    margin-left: 38px;
+    background-color: #000000;
+
+
+}
+
+.section-3 .s-3-d-1 div {
+    height: 771px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+
+}
+
+.section-3 .s-3-d-1 div .s-3-svg {
+    /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M972.6 502.3 939 465a40 40 0 0 1-6-44.9l22.8-44.6a40 40 0 0 0-18.4-54.2l-45.2-21.7a40 40 0 0 1-22.7-39.2l4-50a40 40 0 0 0-37.8-43l-50-2.6a40 40 0 0 1-36-27.6l-15.5-47.6A40 40 0 0 0 683 64.3l-47.3 16.6A40 40 0 0 1 592 69.2l-32.6-38a40 40 0 0 0-57.1-3.8L465 61a40 40 0 0 1-44.9 6L375.5 44a40 40 0 0 0-54.2 18.4l-21.7 45.2a40 40 0 0 1-39.2 22.7l-50-4a40 40 0 0 0-43 37.8l-2.6 50a40 40 0 0 1-27.6 36l-47.6 15.5A40 40 0 0 0 64.3 317l16.6 47.3A40 40 0 0 1 69.2 408l-38 32.6a40 40 0 0 0-3.8 57.1L60.9 535a40 40 0 0 1 6 44.9L44 624.5a40 40 0 0 0 18.4 54.2l45.2 21.7a40 40 0 0 1 22.7 39.2l-4 50a40 40 0 0 0 37.8 43l50 2.6a40 40 0 0 1 36 27.6l15.5 47.6a40 40 0 0 0 51.3 25.3l47.3-16.6a40 40 0 0 1 43.7 11.7l32.6 38a40 40 0 0 0 57.1 3.8l37.3-33.5a40 40 0 0 1 44.9-6l44.6 22.8a40 40 0 0 0 54.2-18.4l21.7-45.2a40 40 0 0 1 39.2-22.6l50 3.8a40 40 0 0 0 43-37.7l2.6-50a40 40 0 0 1 27.6-36l47.6-15.5a40 40 0 0 0 25.3-51.3l-16.6-47.3a40 40 0 0 1 11.7-43.7l38-32.6a40 40 0 0 0 3.8-57.1Z" fill="%23C6A47E"></path></svg>'); */
+
+    width: 152px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cpath d='M972.6 502.3 939 465a40 40 0 0 1-6-44.9l22.8-44.6a40 40 0 0 0-18.4-54.2l-45.2-21.7a40 40 0 0 1-22.7-39.2l4-50a40 40 0 0 0-37.8-43l-50-2.6a40 40 0 0 1-36-27.6l-15.5-47.6A40 40 0 0 0 683 64.3l-47.3 16.6A40 40 0 0 1 592 69.2l-32.6-38a40 40 0 0 0-57.1-3.8L465 61a40 40 0 0 1-44.9 6L375.5 44a40 40 0 0 0-54.2 18.4l-21.7 45.2a40 40 0 0 1-39.2 22.7l-50-4a40 40 0 0 0-43 37.8l-2.6 50a40 40 0 0 1-27.6 36l-47.6 15.5A40 40 0 0 0 64.3 317l16.6 47.3A40 40 0 0 1 69.2 408l-38 32.6a40 40 0 0 0-3.8 57.1L60.9 535a40 40 0 0 1 6 44.9L44 624.5a40 40 0 0 0 18.4 54.2l45.2 21.7a40 40 0 0 1 22.7 39.2l-4 50a40 40 0 0 0 37.8 43l50 2.6a40 40 0 0 1 36 27.6l15.5 47.6a40 40 0 0 0 51.3 25.3l47.3-16.6a40 40 0 0 1 43.7 11.7l32.6 38a40 40 0 0 0 57.1 3.8l37.3-33.5a40 40 0 0 1 44.9-6l44.6 22.8a40 40 0 0 0 54.2-18.4l21.7-45.2a40 40 0 0 1 39.2-22.6l50 3.8a40 40 0 0 0 43-37.7l2.6-50a40 40 0 0 1 27.6-36l47.6-15.5a40 40 0 0 0 25.3-51.3l-16.6-47.3a40 40 0 0 1 11.7-43.7l38-32.6a40 40 0 0 0 3.8-57.1Z' fill='%23C6A47E'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
+
+.section-3 .s-3-d-1 div .s-3-svg div div {
+    height: 18px;
+    width: 92%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: #f0f0f0;
+
+
+}
+
+.section-3 .s-3-d-2 {
+    height: 1151px;
+    width: 700px;
+    /* border: 1px solid white; */
+    float: left;
+    margin-left: 38px;
+    background-color: #000000;
+
+
+
+}
+
+.section-3 .s-3-d-2 .s32-d-1 {
+    height: 771px;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 45px;
+    background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Offer-banner-img-01-768x845.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.section-3 .s-3-d-2 .s32-d-1 .s-3-2-svg {
+    /* border: 1px solid white; */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cpath d='M972.6 502.3 939 465a40 40 0 0 1-6-44.9l22.8-44.6a40 40 0 0 0-18.4-54.2l-45.2-21.7a40 40 0 0 1-22.7-39.2l4-50a40 40 0 0 0-37.8-43l-50-2.6a40 40 0 0 1-36-27.6l-15.5-47.6A40 40 0 0 0 683 64.3l-47.3 16.6A40 40 0 0 1 592 69.2l-32.6-38a40 40 0 0 0-57.1-3.8L465 61a40 40 0 0 1-44.9 6L375.5 44a40 40 0 0 0-54.2 18.4l-21.7 45.2a40 40 0 0 1-39.2 22.7l-50-4a40 40 0 0 0-43 37.8l-2.6 50a40 40 0 0 1-27.6 36l-47.6 15.5A40 40 0 0 0 64.3 317l16.6 47.3A40 40 0 0 1 69.2 408l-38 32.6a40 40 0 0 0-3.8 57.1L60.9 535a40 40 0 0 1 6 44.9L44 624.5a40 40 0 0 0 18.4 54.2l45.2 21.7a40 40 0 0 1 22.7 39.2l-4 50a40 40 0 0 0 37.8 43l50 2.6a40 40 0 0 1 36 27.6l15.5 47.6a40 40 0 0 0 51.3 25.3l47.3-16.6a40 40 0 0 1 43.7 11.7l32.6 38a40 40 0 0 0 57.1 3.8l37.3-33.5a40 40 0 0 1 44.9-6l44.6 22.8a40 40 0 0 0 54.2-18.4l21.7-45.2a40 40 0 0 1 39.2-22.6l50 3.8a40 40 0 0 0 43-37.7l2.6-50a40 40 0 0 1 27.6-36l47.6-15.5a40 40 0 0 0 25.3-51.3l-16.6-47.3a40 40 0 0 1 11.7-43.7l38-32.6a40 40 0 0 0 3.8-57.1Z' fill='%23C6A47E'/%3E%3C/svg%3E");
+    padding: 19px 19px;
+
+
+}
+
+.section-3 .s-3-d-2 .s32-d-1 .s-3-2-svg .svg-d-1 {
+    height: 111px;
+    width: 111px;
+    border: 3px solid white;
+    border-radius: 50%;
+
+}
+
+.section-3 .s-3-d-2 .s32-d-1 .s-3-2-svg .svg-d-1 .svg-d-1-1 {
+    margin-left: 4px;
+    text-align: center;
+    height: 18px;
+    width: 92%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: #f0f0f0;
+}
+
+
+.section-4 {
+    height: 1881px;
+    width: 100%;
+    background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-masonary-banner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+
+}
+
+.section-4 .s4-main {
+    height: 100%;
+    width: 100%;
+    background-color: #252525d2;
+}
+
+.section-4 .s-4-d-1 {
+    height: 153px;
+    width: 748px;
+    /* border: 1px solid white; */
+    margin-top: 123px;
+    margin-left: 386px;
+    float: left;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    color: #f0f0f0;
+
+}
+
+.section-4 .s-4-d-2 {
+    height: 0px;
+    width: 96%;
+    border: 1px solid #bb9d7b;
+    float: left;
+    margin-left: 2%;
+    margin-top: 132px;
+
+}
+
+.section-4 .s-4-d-2 .s-4-d-2-1 {
+    height: 11px;
+    width: 11px;
+    background-color: #bb9d7b;
+    margin-top: -5px;
+    border-radius: 50%;
+    float: left;
+    margin-left: -2px;
+
+
+
+}
+
+.section-4 .s-4-d-2 .s-4-d-2-2 {
+    height: 135px;
+    width: 135px;
+    border: 1px solid #3c3c3c;
+    /* border: 1px solid #ffffff; */
+    float: left;
+    margin-left: 155px;
+    border-radius: 50%;
+    margin-top: -65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.section-4 .s-4-d-3 {
+    height: 66px;
+    /* border: 1px solid white; */
+    float: left;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 89px;
+
+
+}
+
+.section-4 .s-4-d-3 .s-4-d-3-1 {
+    height: 100%;
+    width: 165px;
+    /* border: 1px solid white; */
+    float: left;
+    margin-left: 130px;
+    text-align: center;
+    font-size: 16px;
+    color: #515151;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 25px;
+
+
+}
+
+.section-4 .s-4-d-4 {
+    height: 580px;
+    width: 345px;
+    float: left;
+    /* border: 1px solid white; */
+    margin-top: 79px;
+    margin-left: 2%;
+
+
+}
+
+.section-4 .s-4-d-4 i {
+    color: #bb9d7b;
+    margin-top: 10px;
+}
+
+.section-4 .s-4-d-4 .s-4-d-4-1 {
+    height: 415px;
+    width: 100%;
+    /* background-color: #bb9d7b; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.section-5 {
+    height: 1124px;
+    width: 100%;
+    float: left;
+
+}
+
+.section-5 .s-5-d-1 {
+    height: 884px;
+    width: 554px;
+    float: left;
+    /* border: 1px solid white; */
+    margin-top: 122px;
+    margin-left: 2%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0)0%, #0e0e0ee4), url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-Faq-aside-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+.section-5 .s-5-d-1 .s-5-d-1-1 {
+    height: 114px;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 135%;
+
+}
+
+.section-5 .s-5-d-1 .s-5-d-1-1 div {
+    height: 100%;
+    width: 180px;
+    border-right: 1px solid white;
+    float: left;
+    text-align: center;
+
+}
+
+.section-5 .s-5-d-2 {
+    width: 860px;
+    height: 792px;
+    /* border: 1px solid white; */
+    float: left;
+    margin-left: 47px;
+    margin-top: 168px;
+    /* padding: 40px; */
+    box-sizing: border-box;
+}
+
+.s-5-d-2-1 {
+    height: calc(100% - 150px);
+}
+
+
+.s-5-d-2-1-1-item {
+    border-bottom: 1px solid #333;
+}
+
+.s-5-d-2-1-1-header {
+    height: 85px;
+    width: 100%;
+    background-color: transparent;
+    color: #f0f0f0;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    border: 1px solid #515151;
+    margin-top: 20px;
+
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+.s-5-d-2-1-1-header:hover {
+    background-color: #bb9d7b;
+}
+
+.s-5-d-2-1-1-item.active .s-5-d-2-1-1-header {
+    background-color: #bb9d7b;
+    /* color: #000; */
+}
+
+.s-5-d-2-1-1-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 20px;
+    background-color: #BB9D7B;
+    color: #f0f0f0;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    font-family: 'jost', sans-serif;
+
+
+}
+
+.s-5-d-2-1-1-item.active .s-5-d-2-1-1-body {
+    padding: 20px;
+    max-height: 300px;
+    margin-top: -3px;
+    scroll-behavior: smooth;
+
+
+}
+
+.s-5-d-2-1-1-arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.s-5-d-2-1-1-item.active .s-5-d-2-1-1-arrow {
+    transform: rotate(180deg);
+}
+
+.s-5-d-2-2 {
+    margin-top: px;
+    padding: 30px;
+    background-color: #111;
+    border: 1px solid #333;
+}
+
+.section-6 {
+    height: 688px;
+    width: 100%;
+    /* border: 1px solid white; */
+    float: left;
+
+}
+
+.section-6 .s-6-d-1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#pauseBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.section-7 {
+    height: 1222px;
+    width: 100%;
+    background-image: linear-gradient(rgba(172, 7, 7, 0) 0%, #3c3c3c), url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-masonary-banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+}
+
+.section-7 .s-7-d-1 {
+    height: 112px;
+    width: 100%;
+    /* border: 1px solid rgb(234, 11, 11); */
+    margin-top: 110px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.section-7 .s-7-d-2,
+.section-7 .s-7-d-3 {
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s-7-d-2 {
+    height: 360px;
+    width: 703px;
+    float: left;
+    margin-left: 48px;
+    margin-top: 43px;
+    /* border: 1px solid white; */
+}
+
+.s-7-d-3 {
+    height: 360px;
+    width: 337px;
+    margin-top: 30px;
+    margin-left: 30px;
+    /* border: 1px solid white; */
+    float: left;
+}
+
+/* Background image containers with zoom effect */
+.bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.s-7-d-2:hover .bg-container,
+.s-7-d-3:hover .bg-container {
+    transform: scale(1.1);
+}
+
+/* Promotion banners */
+.promo-banner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f0f0f0;
+    text-align: start;
+    background: transparent;
+    z-index: 2;
+    /* border: 1px solid red; */
+    font-family: 'Jost', sans-serif;
+
+}
+
+.discount {
+    font-size: 14px;
+    font-weight: bold;
+    color: #bb9d7b;
+    letter-spacing: 3px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+
+
+}
+
+.product-name {
+    font-size: 40.856px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+
+
+.order-btn:hover {
+    background: white;
+    color: black;
+}
+
+#btn-1 {
+    height: 45px;
+    width: 166px;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.section-8 {
+    height: 1051px;
+    width: 100%;
+    /* border: 1px solid white; */
+    float: left;
+
+}
+
+.section-8 .s-8-d-2 {
+    height: 618px;
+    /* border: 1px solid white; */
+    width: 703px;
+    float: left;
+    margin-left: 29px;
+    margin-top: 81px;
+
+
+
+}
+
+.section-8 .s-8-d-2 .s8-d-2-1 {
+    height: 463px;
+    /* border: 1px solid red; */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.section-8 .s-8-d-2 .s8-d-2-2 {
+    height: 257px;
+    width: 80%;
+    /* border: 1px solid red; */
+    float: right;
+    margin-top: -100px;
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 35px 40px;
+
+}
+
+.section-8 .s-8-d-2 .s8-d-2-2:hover {
+    background-color: #23201E;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    color: #BB9D7B;
+
+}
+
+.section-8 .s-8-d-2 .s8-d-2-2:hover button {
+    background: transparent;
+    border: 1px solid #bb9d7b;
+    color: #bb9d7b;
+}
+
+.section-8 .s-8-d-2 .s8-d-2-2:hover h2 {
+    color: #f0f0f0;
+
+}
+
+.btn-3 {
+    height: 45px;
+    width: 166px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+    margin-top: 20px;
+    font-size: 14px;
+
+}
+
+footer {
+    height: 733px;
+    width: 100%;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://darkfashion.wpengine.com/wp-content/uploads/2023/10/DF-masonary-banner-bg.jpg);
+}
+
+footer .f-main {
+    height: 100%;
+    width: 100%;
+    background-color: #333333cf;
+}
+
+footer .f-d-1 {
+    height: 139px;
+    width: 100%;
+    border-bottom: 1.5px solid #515151;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollLeft 10s linear infinite;
+}
+
+.scrolling-text h1 {
+    font-size: 40px;
+    margin: 0 15px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    line-height: 139px;
+}
+
+.scrolling-text img {
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.f-d-5 div{
+    height: 75px;
+    width: 85px;
+    /* border: 1px solid red; */
+    margin-left: 17px;
+    float: left;
+    margin-top: 30px;
+}
+.f-d-5 div img{
+    height: 100%;
+    width: 100%;
+
+}
+.fd-4-1 i,.fd-4-1 p{
+    color: #f0f0f0;
+
+}
+.fd-4-1 p:hover{
+    color: #bb9d7b;
+    transition: 0.3s ease-in-out;
+}
+.fd-4-1 div i{
+    color: #f0f0f0;
+    font-size: 40px;
+    margin-left: 10px;
+
+}
+.fd-4-1 div i:hover{
+    color: #bb9d7b;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-8px);
+
+
+}
